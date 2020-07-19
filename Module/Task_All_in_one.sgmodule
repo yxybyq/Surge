@@ -449,3 +449,6 @@ qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https
 # 特仑苏 (By 红鲤鱼与绿鲤鱼与驴)
 # 点击进入"特仑苏向往的生活"小程序授权登录后点击放牧获取ck
 特仑苏=type=cron,cronexp=28 9 * * *,wake-system=1,script-pathhttps://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/tls_task.js
+
+# > 热门监控 (By Evilbutcher)
+热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
