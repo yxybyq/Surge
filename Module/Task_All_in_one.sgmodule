@@ -81,6 +81,19 @@ Epic周免= type=cron,cronexp=0 8 */7 * *,script-path=https://raw.githubusercont
 # > PSN会免(By Peng-YM)
 PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js
 
+# > 热门监控 (By Evilbutcher)
+热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
+
+# > 京东价格提醒(By toulanboy)
+京东价格提醒 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
+
+# > 微博通知  (By @zZPiglet)
+# 进入 https://m.weibo.cn 并登陆，获取cookie后进入boxjs配置
+微博通知 =type=cron,cronexp=0 * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
+
+# > 哔哩哔哩番剧监控 (By @lowking0415)
+哔哩哔哩番剧监控 = type=cron,cronexp="0 0 0,1 * * ?",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/bangumiMonitor.js
+
 # 签到脚本
 
 #  NobyDa
@@ -415,9 +428,9 @@ IT之家 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubuserconten
 # 进入微信小程序"欧可林商城"并点击"每日任务"
 欧可林商城 =type=cron,cronexp=0 0 10,21 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js
 
-# > 微博通知  (By @zZPiglet)
-# 进入 https://m.weibo.cn 并登陆，获取cookie后进入boxjs配置
-微博通知 =type=cron,cronexp=0 * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
+# > 小黑盒 (By @zZPiglet)
+# 进入"小黑盒" - "我"，若弹出"首次写入heybox Cookie 成功"即可
+小黑盒 =type=cron,cronexp=0 * * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/heybox/heybox.js
 
 # > 微信小程序-喜马拉雅 (By @makexp)
 # 微信小程序 - 喜马拉雅 - 我的： 签到 “ 获取 Cookie
@@ -460,32 +473,47 @@ IT之家 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubuserconten
 # 打开小木虫app => 发现页面 => 签到领红包 => 拆红包。
 小木虫论坛 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/muchong/muchong.js,wake-system=true,timeout=600
 
-# > 京东价格提醒(By toulanboy)
-京东价格提醒 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/jd_price_detect/jd_price_detect.js
-
 # > qq会员成长值签到 (By @lowking0415)
 # 手机qq进入左侧会员，滑动即可
 qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js,script-update-interval=0
+
+# > 索尼俱乐部(By @lowking)
+# 订阅BoxJs之后填写帐号密码
+索尼俱乐部签到 = type=cron,cronexp="0 0 0 * * ?",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/sony/sonyClub.js
 
 # > 叮咚农场养鱼(By iepngs)
 # 叮咚买菜App - 右下角"我的"- 叮咚农场
 叮咚农场养鱼=type=cron,cronexp="1 8,12,17 * * *",script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js,wake-system=true,timeout=600
 
-# 惠头条签(By 红鲤鱼与绿鲤鱼与驴)
+# > 惠头条签(By 红鲤鱼与绿鲤鱼与驴)
 # 作者的邀请码:53150681 
 # nzw9314邀请码: 12773106
 #时段签到, 阅读数据, 小视频和视频 4个cookie
 惠头条 type=cron,cronexp=*/2 0-11/1 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/htt_task.js
 
-# 趣看天下(By 红鲤鱼与绿鲤鱼与驴)
+# > 趣看天下(By 红鲤鱼与绿鲤鱼与驴)
 # 作者的邀请码:9656852 
 # nzw9314邀请码: 9850323
 # iepngs邀请码:9848880
 趣看天下=type=cron,cronexp=*/3 0-20/1 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/qktx_task.js
 
-# 特仑苏 (By 红鲤鱼与绿鲤鱼与驴)
+# > 特仑苏 (By 红鲤鱼与绿鲤鱼与驴)
 # 点击进入"特仑苏向往的生活"小程序授权登录后点击放牧获取ck
 特仑苏=type=cron,cronexp=28 9 * * *,wake-system=1,script-pathhttps://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/tls_task.js
 
-# > 热门监控 (By Evilbutcher)
-热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
+# > 无忧行
+# 1.打开无忧行App, 通知成功写入「 AccountID | UserID | Mobile | Token 」.
+# 2.依次点击"我的" 👉 "任务中心". 通知成功写入「 TaskID 」.
+无忧行签到 = type=cron,cronexp=0 9 * * *,script-path=https://ooxx.be/js/jegotrip.js
+
+# > 优麦医生
+# 打开优麦医生App，通知成功获取Cookie
+优麦医生 = type=cron,cronexp=0 9 * * *,script-path=https://ooxx.be/js/umer.js
+
+# > 时代天使 (by chouchoui)
+# 打开微信小程序 时代天使小管家，点击左下角刷新按钮，提示Cookie获取成功
+时代天使 = type=cron,cronexp=30 8,13,19 * * *,script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/angelalign/angelalign.task.js, tag=时代天使
+
+# > NGA刮墙 (by chouchoui)
+# 杀掉NGA后台并重新打开NGA，提示Cookie获取成功
+时代天使 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.js, tag=NGA刮墙
