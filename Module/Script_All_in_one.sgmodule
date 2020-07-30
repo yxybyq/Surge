@@ -53,6 +53,10 @@ URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
 
 [Script]
+# Chavy box (多账号Cookie保存切换)
+# 访问: http://boxjs.com管理
+Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
+
 # > yichahucha
 # > 京东比价
 jd_price.js = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
@@ -278,11 +282,6 @@ kkyy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.c
 # 飒漫画 (By @u18888)
 Smh.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Smh.js,type=http-response,pattern=^https:\/\/m\.samh\.xndm\.tech\/userapi\/info\/v1\/getuserinfo
 
-# Chavy box (多账号Cookie保存切换)
-# 访问: https://8.8.8.8/home或 http://1.1.1.1/home管理
-Rewrite: BoxJs = type=http-request,pattern=^https://8.8.8.8/api,script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js,requires-body=true,max-size=0,timeout=120
-Rewrite: BoxJs = type=http-request,pattern=^https://8.8.8.8/(home|sub|my|app|log|revert)($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js,requires-body=true,max-size=0,timeout=120
-Rewrite: BoxJs = type=http-request,pattern=^https?://1.1.1.1/(api|home|sub|my|app|log|revert)($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js,requires-body=true,max-size=0,timeout=120
 
 # > Langkhach越南老哥
 # > all apps monkey
