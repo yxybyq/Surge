@@ -185,7 +185,7 @@ ithome.cookie = type=http-request,pattern=^https:\/\/my\.ruanmei\.com\/api\/user
 get_cookie_surge.js = max-size=0,script-path=https://raw.githubusercontent.com/NavePnow/Profiles/master/Scripts/weibo/get_cookie_surge.js,type=http-request,pattern=https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin
 
 # > 饿了么 (By @syzzzf)
-elemGetCookies.js = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/elemGetCookies.js,type=http-request,pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$
+elemGetCookies.js = script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js,type=http-request,pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$
 
 # > 斗鱼鱼吧 (By @yyfyyf123)
 yubaSign.js = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/yubaSign.js,type=http-request,pattern=https://yuba.douyu.com/wbapi/web/group/myFollow
@@ -254,9 +254,6 @@ WeChatLottery_new.js = script-path=https://raw.githubusercontent.com/nzw9314/Qua
 
 # > 115 (By @zZPiglet)
 115cookie = script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/115/115.js,type=http-request,pattern=^https?:\/\/proapi\.115\.com\/ios\/user\/takespc\?
-
-# > 喜茶 (By @zZPiglet)
-喜茶cookie = script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/HEYTEA/HEYTEA.js,type=http-request,pattern=^https:\/\/vip\.heytea\.com\/api\/service-member\/vip\/task$
 
 # > 奈雪 (By @zZPiglet)
 奈雪cookie = script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js,type=http-request,pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene
